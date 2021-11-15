@@ -8,7 +8,7 @@ image, or you can resize to a square shape
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Toolbox like below. 
 Rerun this command to check for and install  updates .
 ```bash
-pip install git+https://github.com/MuthumbiAlex/exercise
+pip install git+https://github.com/MuthumbiAlex/ev82etiq
 ```
 
 ## Usage
