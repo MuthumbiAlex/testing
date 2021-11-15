@@ -21,17 +21,23 @@ Features:
 
 * if code is run as ipynb, you can use interact to choose a slider on size of image (toy example provided), and dropbox with ratio choice
 
+* function.ipynb is added as well ( to test the original .ipynb code written,and not .py since ipywidgets don't work in .py files)
+
 #### Demo of some of the features:
 ```python
-import toolbox
-from toolbox import report
+## cd into the directory
+## use in jupyter notebook to use interactive from ipywidgets
 
-message = toolbox.functions.weirdCase("The toolbox package is ready for use")
-report(message)
+import ev82etiq
+from ev82etiq import function
 
-list_of_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-for chunk in toolbox.functions.listChunker(lst=list_of_numbers, dsize=3):
-    print(chunk)
+# location of test image
+im = r"data\new.png"
+
+# by default, ratio is false so image is cropped to square
+# starting height is 500
+interact(im_resized, x=fixed(im), height=(100,1000,100), ratio=[True, False])
+
 ```
 
 ## License
